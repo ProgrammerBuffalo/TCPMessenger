@@ -1,0 +1,26 @@
+﻿<Window x:Class="SimpleMessenger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleMessenger"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="btnConnect" Margin="5" Grid.ColumnSpan="2" Click="Button_Click">CONNECT</Button>
+        <TextBlock Name="txtBlock" Grid.Row="1" Margin="5" Background="AliceBlue" Grid.ColumnSpan="2"></TextBlock>
+        <TextBox Name="inputBox" Grid.Row="2" Margin="5"></TextBox>
+        <Button Grid.Row="2" Margin="5" Grid.Column="1" Click="Button_Click_1">SEND</Button>
+    </Grid>
+</Window>
